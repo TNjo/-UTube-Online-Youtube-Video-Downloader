@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+.App{
+    display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+}
+.div1 {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-top: 20px;
+}
+.div2 {
+    grid-area: 2 / 2 / 4 / 6;
+    background-color: rgb(145, 245, 245);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+input{
+    width: 500px;
+    height: 38px;
+    border: 5px solid #05f02c;
+   
+}
+.send{
+   
+    width: 100px;
+    height: 50px;  
+    border: 5px solid #05f02c;
+    background-color: #05f02c;
+    font-size: larger;
+    align-items: center;
+    text-align: center;
+}
+.send:hover{
+    background-color: #66f37e;
+    color: white;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.download{
+    text-align: center; 
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+.logoT{
+    /* margin-left: 1cm; */
+    color: red;
+}
+.limg{
+    margin-top: 10px;
+    margin-left: 1cm;
+    width: 2cm;
+    height: 2cm;
+}
+h1{
+    font-size: 2rem;
+    color:#000000;
+    align-items: center;
+}
+.red{
+    color: red;
+}
+.div3 {
+    grid-area: 4 / 3 / 6 / 5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.div4 {
+    grid-area: 6 / 3 / 7 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+select{
+    width: 100%;
+    height: 38px;
+    border: 5px solid #05f02c;
+    margin-bottom: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+option{
+    width: 100%;
+    height: 38px;
+    border: 5px solid #05f02c;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: italic;
+   
 }
+.download1{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    width: 150px;
+    
+    height: 50px;
+    border: 5px solid #05e0f0;
+    background-color: #05e0f0;
+    font-size: larger;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+.download1:hover {
+    background-color: #09f330;
+    border: 5px solid #09f330;
+    color: white;
+
 }
